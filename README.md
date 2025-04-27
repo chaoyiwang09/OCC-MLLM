@@ -2,7 +2,7 @@
 
 ## Overview
 
-MORE-MLLM is a cutting-edge framework for multi-modal large language model (MLLM) tasks, with a primary focus on 3D object reconstruction. This framework is built upon two foundational environments: [InternVL](https://github.com/OpenGVLab/InternVL) and [MOHO](https://github.com/ZhangCYG/MOHO). 
+MORE-MLLM-COT is a cutting-edge framework for multi-modal large language model (MLLM) tasks, with a primary focus on 3D object reconstruction. This framework is built upon two foundational environments: [InternVL](https://github.com/OpenGVLab/InternVL) and [MOHO](https://github.com/ZhangCYG/MOHO). 
 
 This repository provides instructions to:
 - Set up the required environments.
@@ -112,8 +112,12 @@ bash finetune-sft2.sh
 ```
 
 ### Inference
-1. Use the scripts `inferenceImageAcc.py` to run inference with the trained model.
+1. Use the scripts `inference.py` to run inference with the trained model.
 2. Results saved in the `result` directory.
+
+```bash
+python inference.py
+```
 
 ## File Descriptions
 
@@ -128,8 +132,7 @@ bash finetune-sft2.sh
 ## Best Model
 
 Our best-performing model, **OCC-MLLM-COT**, is publicly available at:
-[Model Download Link](#)
-> Replace `#` with the URL where your model is hosted.
+[Baidu Netdisk Link](https://pan.baidu.com/s/1bZ4NztX8WlFkHoTsjHHSVg?pwd=cprj) (extraction code: `cprj`)
 
 ---
 
