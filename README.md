@@ -153,7 +153,7 @@ For questions or issues, feel free to open an issue or reach out chaoyiwang@mail
 
 
 
-# OCC-MLLM: Chain-of-Thoughts Guided Multimodal Learning for Occluded Object Understanding
+# OCC-MLLM-V1: Chain-of-Thoughts Guided Multimodal Learning for Occluded Object Understanding
 
 This repository contains the official implementation of our paper: "Chain-of-Thoughts Guided Multimodal Learning for Occluded Object Understanding"
 

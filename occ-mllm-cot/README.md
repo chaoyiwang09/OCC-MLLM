@@ -2,7 +2,7 @@
 
 ## Overview
 
-MORE-MLLM is a cutting-edge framework for multi-modal large language model (MLLM) tasks, with a primary focus on 3D object reconstruction. This framework is built upon two foundational environments: [InternVL](https://github.com/OpenGVLab/InternVL) and [MOHO](https://github.com/ZhangCYG/MOHO). 
+OCC-MLLM-COT  is a cutting-edge framework for multi-modal large language model (MLLM) tasks, with a primary focus on 3D object reconstruction. This framework is built upon two foundational environments: [InternVL](https://github.com/OpenGVLab/InternVL) and [MOHO](https://github.com/ZhangCYG/MOHO). 
 
 This repository provides instructions to:
 - Set up the required environments.
