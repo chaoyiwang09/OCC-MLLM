@@ -34,17 +34,6 @@ The following figure illustrates the overall training pipeline and the Chain-of-
   <img src="./sampleImg/dataset.jpg" alt="Training Process and Dataset Alignment" width="85%">
 </p>
 
----
-
-## 🧩 Inference Process Visualization
-
-The following figure showcases the inference steps on sample inputs. It demonstrates how the model analyzes the original RGB image, performs self-assessment on visibility clarity, optionally applies 3D reconstruction if necessary, and ultimately identifies the object held in the hand.
-
-<p align="center">
-  <img src="./sampleImg/visualresults.jpg" alt="Inference Process Visualization" width="85%">
-</p>
-
-
 
 ---
 

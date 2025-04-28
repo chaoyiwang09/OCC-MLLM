@@ -83,6 +83,16 @@ python inference.py
 
 Our dataset contains 110k samples of occluded objects held in hand, specially designed for training multimodal models to understand occluded objects through Chain-of-Thoughts reasoning. The training data is provided in JSONL format in the respective step directories.
 
+---
+
+## 🧩 Inference Process Visualization
+
+The following figure showcases the inference steps on sample inputs. It demonstrates how the model analyzes the original RGB image, performs self-assessment on visibility clarity, optionally applies 3D reconstruction if necessary, and ultimately identifies the object held in the hand.
+
+<p align="center">
+  <img src="./sampleImg/visualresults.jpg" alt="Inference Process Visualization" width="85%">
+</p>
+
 ## Citation
 
 If you find our work useful in your research, please consider citing:
