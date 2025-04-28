@@ -26,6 +26,12 @@ We provide the trained model checkpoints via Baidu Netdisk.
 
 > 🔗 Download link: [Baidu Netdisk Link](https://pan.baidu.com/s/1bZ4NztX8WlFkHoTsjHHSVg?pwd=cprj) (extraction code: `cprj`)
 
+## 🧩 Inference Process Visualization
+
+The figure below illustrates the inference pipeline of our method. It showcases examples progressing through the different stages, including multi-modal CoT reasoning, self-reflection, 3D expert assistance (when necessary), and the final object identification.
+
+![Inference Process](./sampleImg/visualresults.jpg)
+
 
 ---
 
