@@ -1,13 +1,13 @@
 # OCC-MLLM-COT
-#(Multi-stage OCClusion reasoning with MLLM via 3D-aware supervision and Chain-of-Thoughts Reasoning)
+Multi-stage OCClusion reasoning with MLLM via 3D-aware supervision and Chain-of-Thoughts Reasoning
 <p align="center">
   <img src="./sampleImg/logo.jpg" alt="OCC-MLLM-COT Logo" width="300px">
   <br>
   <em>Multi-stage OCClusion reasoning with MLLM via 3D-aware supervision and Chain-of-Thoughts Reasoning</em>
   <br>
   <a href="https://github.com/chaoyiwang09/OCC-MLLM/tree/main" target="_blank">GitHub</a> | 
-  <a href="#https://arxiv.org/abs/2504.04781" target="_blank">Paper</a> |
-  <a href="#https://pan.baidu.com/s/1bZ4NztX8WlFkHoTsjHHSVg?pwd=cprj" target="_blank">Model Link</a>
+  <a href="https://arxiv.org/abs/2504.04781" target="_blank">Paper</a> |
+  <a href="https://pan.baidu.com/s/1bZ4NztX8WlFkHoTsjHHSVg?pwd=cprj" target="_blank">Model Link</a>
 </p>
 
 ## 📖 Introduction
@@ -26,7 +26,11 @@ Key features include:
 - Support for models from 1B to 8B parameters
 
 ## 🎬 Example Results
+The following figure illustrates the overall training pipeline and the Chain-of-Thought (CoT) dataset alignment strategy. It highlights the supervised description phase, the self-reflection stage with Mixed Preference Optimization (MPO), and the final decision process.
 
+<p align="center">
+  <img src="./sampleImg/dataset.jpg" alt="Training Process and Dataset Alignment" width="85%">
+</p>
 
 ## 📰 Latest News
 
@@ -116,13 +120,9 @@ Performance comparison on decision scores across different models and training s
 | GPT4o (Learning) | 0.5532 | - |
 | MiniGPT4-V2-8B | - | 0.3209 |
 | Mini-Gemini-8B | - | 0.4981 |
-| **MLLM-Qwen2-1B-Base** | 0.5500 | 0.6119 |
 | **OCC-MLLM-CoT (1B)** | 0.6625 | 0.6724 |
-| **MLLM-Internlm2-2B-Base** | 0.5524 | 0.6189 |
 | **OCC-MLLM-CoT (2B)** | 0.6643 | 0.6762 |
-| **MLLM-Phi3-4B-Base** | 0.5571 | 0.6213 |
 | **OCC-MLLM-CoT (4B)** | 0.6654 | 0.6921 |
-| **MLLM-Internlm2.5-8B-Base** | 0.5751 | 0.6412 |
 | **OCC-MLLM-CoT (8B)** | **0.6768** | **0.7526** |
 
 *Note: For fine-tuning GPT-4o, we prepared 110,000 images, but 90,860 were automatically skipped due to the training policies, leaving 10,140 images for fine-tuning.*
@@ -300,4 +300,4 @@ We extend our gratitude to:
 For questions, issues, or collaboration opportunities:
 
 - **Main Contact**: Chaoyi Wang - chaoyiwang@mail.sim.ac.cn
-Xinhan Di - xinhan.di@example.org
+Xinhan Di - deepearthgo@gmail.com
