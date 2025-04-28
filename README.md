@@ -239,7 +239,6 @@ python inferenceImageAcc.py
 - Make sure each directory contains the correct version of the required Python files before running scripts
 - The training process is sequential: SFT1 → SFT2 → MPO
 - Each stage builds upon the previous stage's checkpoint
-- Monitor the `.ipynb_checkpoints` folder in each directory for saved model checkpoints
 - The final model after MPO training represents the complete OCC-MLLM-CoT model
 
 This comprehensive training pipeline implements the 3D-aware supervision and Chain-of-Thought reasoning approach described in your paper.
