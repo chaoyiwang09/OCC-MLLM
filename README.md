@@ -113,17 +113,33 @@ python inference.py
 
 Performance comparison on decision scores across different models and training settings:
 
-| Model | 10K-Learning Decision | 100K-Learning Decision |
-|:-----:|:---------------------:|:----------------------:|
-| GPT4v (Zero-shot) | 0.0361 | - |
-| GPT4o (Zero-shot) | 0.1306 | - |
-| GPT4o (Learning) | 0.5532 | - |
-| MiniGPT4-V2-8B | - | 0.3209 |
-| Mini-Gemini-8B | - | 0.4981 |
-| **OCC-MLLM-CoT (1B)** | 0.6625 | 0.6724 |
-| **OCC-MLLM-CoT (2B)** | 0.6643 | 0.6762 |
-| **OCC-MLLM-CoT (4B)** | 0.6654 | 0.6921 |
-| **OCC-MLLM-CoT (8B)** | **0.6768** | **0.7526** |
+| Model | Training Setting | Description | Reflection | Decision |
+|:-----:|:----------------:|:-----------:|:----------:|:--------:|
+| **Zero-shot Models** |
+| GPT4v (Zero-shot) | - | - | - | 0.0361 |
+| GPT4o (Zero-shot) | - | - | - | 0.1306 |
+| **10K-Learning Models** |
+| GPT4o (Learning) | 10K | - | - | 0.5532 |
+| MLLM-Qwen2-1B-Base | 10K | - | - | 0.5500 |
+| **OCC-MLLM-CoT (1B)** | 10K | **0.6512** | **0.6843** | **0.6625** |
+| MLLM-Internlm2-2B-Base | 10K | - | - | 0.5524 |
+| **OCC-MLLM-CoT (2B)** | 10K | **0.6534** | **0.6857** | **0.6643** |
+| MLLM-Phi3-4B-Base | 10K | - | - | 0.5571 |
+| **OCC-MLLM-CoT (4B)** | 10K | **0.6561** | **0.6872** | **0.6654** |
+| MLLM-Internlm2.5-8B-Base | 10K | - | - | 0.5751 |
+| **OCC-MLLM-CoT (8B)** | 10K | **0.6599** | **0.7088** | **0.6768** |
+| **100K-Learning Models** |
+| MiniGPT4-V2-8B | 100K | - | - | 0.3209 |
+| Mini-Gemini-8B | 100K | - | - | 0.4981 |
+| MLLM-Qwen2-1B-Base | 100K | - | - | 0.6119 |
+| **OCC-MLLM-CoT (1B)** | 100K | **0.6687** | **0.6953** | **0.6724** |
+| MLLM-Internlm2-2B-Base | 100K | - | - | 0.6189 |
+| **OCC-MLLM-CoT (2B)** | 100K | **0.6748** | **0.7018** | **0.6762** |
+| MLLM-Phi3-4B-Base | 100K | - | - | 0.6213 |
+| **OCC-MLLM-CoT (4B)** | 100K | **0.6835** | **0.7042** | **0.6921** |
+| MLLM-Internlm2.5-8B-Base | 100K | - | - | 0.6412 |
+| **OCC-MLLM-CoT (8B)** | 100K | **0.7419** | **0.7612** | **0.7526** |
+
 
 *Note: For fine-tuning GPT-4o, we prepared 110,000 images, but 90,860 were automatically skipped due to the training policies, leaving 10,140 images for fine-tuning.*
 
