@@ -147,11 +147,6 @@ Generated images will be available at:
 ```
 https://obmandataset.s3.us-east-2.amazonaws.com/3d_views_fine_test_all/{imageID}_0_obman_test_rgb_{imageID}.jpg.png
 ```
-
-### Fine-tuning
-
-Based on the file structure you've shown me, I'll provide a comprehensive guide for the fine-tuning process. Let me update the fine-tuning section with clear, step-by-step instructions:
-
 ## Fine-tuning Process
 
 ### Data Preparation
