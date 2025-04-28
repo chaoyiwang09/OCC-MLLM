@@ -26,11 +26,24 @@ We provide the trained model checkpoints via Baidu Netdisk.
 
 > 🔗 Download link: [Baidu Netdisk Link](https://pan.baidu.com/s/1bZ4NztX8WlFkHoTsjHHSVg?pwd=cprj) (extraction code: `cprj`)
 
+## 📚 Training Process and Dataset Alignment
+
+The following figure illustrates the overall training pipeline and the Chain-of-Thought (CoT) dataset alignment strategy. It highlights the supervised description phase, the self-reflection stage with Mixed Preference Optimization (MPO), and the final decision process.
+
+<p align="center">
+  <img src="./sampleImg/dataset.jpg" alt="Training Process and Dataset Alignment" width="85%">
+</p>
+
+---
+
 ## 🧩 Inference Process Visualization
 
-The figure below illustrates the inference pipeline of our method. It showcases examples progressing through the different stages, including multi-modal CoT reasoning, self-reflection, 3D expert assistance (when necessary), and the final object identification.
+The following figure showcases the inference steps on sample inputs. It demonstrates how the model analyzes the original RGB image, performs self-assessment on visibility clarity, optionally applies 3D reconstruction if necessary, and ultimately identifies the object held in the hand.
 
-![Inference Process](./sampleImg/visualresults.jpg)
+<p align="center">
+  <img src="./sampleImg/visualresults.jpg" alt="Inference Process Visualization" width="85%">
+</p>
+
 
 
 ---
@@ -159,109 +172,6 @@ We extend our gratitude to:
 ---
 
 For questions or issues, feel free to open an issue or reach out chaoyiwang@mail.sim.ac.cn.
-
-
-
-# OCC-MLLM-V1: Chain-of-Thoughts Guided Multimodal Learning for Occluded Object Understanding
-
-This repository contains the official implementation of our paper: "Chain-of-Thoughts Guided Multimodal Learning for Occluded Object Understanding"
-
-## Overview
-
-Comprehending occluded objects remains a significant challenge for existing large visual-language multimodal models. Current state-of-the-art multimodal large models struggle to provide satisfactory results when understanding occluded objects through universal visual encoders and supervised learning strategies. 
-
-Inspired by the effectiveness of step-by-step Chain-of-Thoughts (CoTs) reasoning in large language models, we propose a novel end-to-end visual-language multimodal framework with self-generated step-by-step CoTs guidance for understanding occluded objects.
-
-## Directory Structure
-
-```
-occ-mllm-v1/
-├── inference.py                            # Main inference script
-├── step1/
-│   ├── 4b_q1.sh                           # Training script for step 1
-│   └── train_Q1_10140.jsonl               # Training data for step 1
-├── step2/
-│   ├── 4b_q1_q6.sh                        # Training script for step 2
-│   └── train_Q1_Q6_10140.jsonl            # Training data for step 2
-├── step3/
-│   ├── 4b_q1_q6_MPO.sh                    # MPO training script
-│   ├── 4b_q1_q6-MPO-q1.sh                 # MPO-Q1 training script
-│   ├── train_Q1_10140.jsonl               # Training data
-│   └── train_Q1_Q6_balanced_dpo_10140.jsonl # Balanced DPO training data
-└── step4/
-    ├── 4b_q1_q6-MPO-q1-sc.sh              # SC training script
-    ├── 4b_q1_q6-MPO-q1-sc-q1.sh           # SC-Q1 training script
-    ├── 4b_q1_q6-MPO-q1-sc-q1-cot.sh       # SC-Q1-CoT training script
-    ├── internvl_chat_finetune_sc.py       # InternVL chat fine-tuning script
-    ├── sc_trainer.py                       # SC trainer implementation
-    ├── train_Q1_101.jsonl                  # Small training sample
-    ├── train_Q1_10140.jsonl                # Full training data for Q1
-    └── train_Q1_Q6_Q0_4_balanced_10140.jsonl # Balanced training data
-```
-
-## Training Pipeline
-
-Our training process consists of four sequential steps:
-
-### Step 1: Initial Training
-```bash
-cd step1
-bash 4b_q1.sh
-```
-This step initializes the model with basic occluded object understanding capabilities using the `train_Q1_10140.jsonl` dataset.
-
-### Step 2: Multimodal Query Enhancement
-```bash
-cd ../step2
-bash 4b_q1_q6.sh
-```
-This step enhances the model's ability to handle multiple types of queries using the `train_Q1_Q6_10140.jsonl` dataset.
-
-### Step 3: Minimum Preference Optimization
-```bash
-cd ../step3
-bash 4b_q1_q6_MPO.sh
-# or
-bash 4b_q1_q6-MPO-q1.sh
-```
-This step applies preference optimization techniques to improve the model's reasoning capabilities.
-
-### Step 4: Self-Consistency Training with Chain-of-Thoughts
-```bash
-cd ../step4
-bash 4b_q1_q6-MPO-q1-sc.sh
-# or for Chain-of-Thoughts specific training
-bash 4b_q1_q6-MPO-q1-sc-q1-cot.sh
-```
-The final step incorporates self-consistency and Chain-of-Thoughts reasoning to further enhance the model's performance.
-
-## Inference
-
-To run inference with the trained model:
-
-```bash
-python inference.py
-```
-
-## Dataset
-
-Our dataset contains 110k samples of occluded objects held in hand, specially designed for training multimodal models to understand occluded objects through Chain-of-Thoughts reasoning. The training data is provided in JSONL format in the respective step directories.
-
-## Citation
-
-If you find our work useful in your research, please consider citing:
-
-```bibtex
-@misc{wang2025occmllmcotalphamultistageocclusionrecognition,
-      title={OCC-MLLM-CoT-Alpha: Towards Multi-stage Occlusion Recognition Based on Large Language Models via 3D-Aware Supervision and Chain-of-Thoughts Guidance}, 
-      author={Chaoyi Wang and Baoqing Li and Xinhan Di},
-      year={2025},
-      eprint={2504.04781},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2504.04781}, 
-}
-```
 
 ## License
 
