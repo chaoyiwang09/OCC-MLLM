@@ -1,13 +1,16 @@
-# OCC-MLLM-COT
+# OCC-MLLM-COT  
 Multi-stage OCClusion reasoning with MLLM via 3D-aware supervision and Chain-of-Thoughts Reasoning
+
 <p align="center">
   <img src="./sampleImg/logo.jpg" alt="OCC-MLLM-COT Logo" width="300px">
   <br>
   <em>Multi-stage OCClusion reasoning with MLLM via 3D-aware supervision and Chain-of-Thoughts Reasoning</em>
   <br>
-  <a href="https://github.com/chaoyiwang09/OCC-MLLM/tree/main" target="_blank">GitHub</a> | 
-  <a href="https://arxiv.org/abs/2504.04781" target="_blank">Paper</a> |
-  <a href="https://pan.baidu.com/s/1bZ4NztX8WlFkHoTsjHHSVg?pwd=cprj" target="_blank">Model Link</a>
+  <a href="https://github.com/chaoyiwang09/OCC-MLLM/tree/main" target="_blank">[GitHub]</a> |
+  <a href="https://arxiv.org/abs/2504.04781" target="_blank">[Paper]</a> |
+  <a href="https://pan.baidu.com/s/1bZ4NztX8WlFkHoTsjHHSVg?pwd=cprj" target="_blank">[Model]</a> |
+  <a href="https://scholar.google.com/citations?hl=zh-CN&user=e_wL1LsAAAAJ" target="_blank">[Chaoyi Wang]</a> |
+  <a href="https://scholar.google.com/citations?hl=zh-CN&user=CDijR8YAAAAJ" target="_blank">[Yuxuan Yang]</a>
 </p>
 
 ## 📖 Introduction
