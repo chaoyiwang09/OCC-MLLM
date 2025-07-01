@@ -10,7 +10,7 @@ Multi-stage OCClusion reasoning with MLLM via 3D-aware supervision and Chain-of-
   <a href="https://arxiv.org/abs/2504.04781" target="_blank">[Paper]</a> |
   <a href="https://pan.baidu.com/s/1bZ4NztX8WlFkHoTsjHHSVg?pwd=cprj" target="_blank">[Model]</a> |
   <a href="https://scholar.google.com/citations?hl=zh-CN&user=e_wL1LsAAAAJ" target="_blank">[Chaoyi Wang]</a> |
-  <a href="https://scholar.google.com/citations?hl=zh-CN&user=CDijR8YAAAAJ" target="_blank">[Yuxuan Yang]</a>
+  <a href="https://scholar.google.com/citations?hl=zh-CN&user=CDijR8YAAAAJ" target="_blank">[Xinhan Di]</a>
 </p>
 
 ## 📖 Introduction
