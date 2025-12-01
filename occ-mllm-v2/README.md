@@ -84,7 +84,6 @@ Prepare your dual-image dataset in JSON format:
       {"from": "human", "value": "<image>\nWhat's the object in the hand?"},
       {"from": "gpt", "value": "The object is banana."}
     ],
-    "occlusion_mask": "/path/to/mask.png"  // optional
   }
 ]
 ```
