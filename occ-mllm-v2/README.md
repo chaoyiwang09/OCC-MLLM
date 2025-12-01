@@ -156,16 +156,6 @@ engine = HTFAInference(
     device="cuda"
 )
 
-# Batch inference
-image_pairs = [
-    ("orig1.jpg", "recon1.jpg"),
-    ("orig2.jpg", "recon2.jpg"),
-]
-queries = [
-    "What object is this?",
-    "Describe the occluded object."
-]
-
 results = engine.batch_infer(image_pairs, queries, batch_size=4)
 ```
 
