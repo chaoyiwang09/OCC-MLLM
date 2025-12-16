@@ -126,11 +126,12 @@ Example:
 ```
 https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb//00000000.jpg
 ```
-    - OR Original images (ObMan): `https://pan.baidu.com/s/1oc1bVhl9btEserZxb7yA1Q?pwd=4atx` (code: `4atx`, archive: `obman.zip`)
+    - Original images (ObMan): [Baidu Netdisk (code: 4atx)](https://pan.baidu.com/s/1oc1bVhl9btEserZxb7yA1Q?pwd=4atx) (archive: `obman.zip`)
+    - Original images example (ObMan, test set): [test sample](https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb//00000000.jpg)
 
 - OCC-MLLM Dataset (DexYCB-based)
   - Full instructions and index files: [dex-ycb-dataset/README.md](./dex-ycb-dataset/README.md)
-  - Download: `https://pan.baidu.com/s/1olDfMPFIDlmsR9NKDWZymQ?pwd=k56i` (code: `k56i`)
+  - Download: [Baidu Netdisk (code: k56i)](https://pan.baidu.com/s/1olDfMPFIDlmsR9NKDWZymQ?pwd=k56i)
   - Merge and extract:
 ```bash
 cat dex_ycb_occ_mllm_dataset.tar.gz.part0* > dex_ycb_occ_mllm_dataset.tar.gz
