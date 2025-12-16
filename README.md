@@ -104,6 +104,28 @@ Our pretrained models are available on Baidu Netdisk:
 |Phi3-4B | ~4 Billion | outputdir-4b-Q1-Q6-MPO-SC-069.tar.gz |
 |Internlm2.5-8B | ~8 Billion | outputdir-8b-Q1-Q6-MPO-SC-075.tar.gz |
 
+## 📦 Dataset Access
+
+- OCC-MLLM Dataset (ObMan-based)
+  - See details: [occ-mllm-cot/README.md](./occ-mllm-cot/README.md)
+  - Key steps:
+    - Prepare `obman_view_test_all.txt`
+    - Run:
+```bash
+python recontruct_3Dimage.py
+```
+    - Reconstructed 3D views available at: `https://obmandataset.s3.us-east-2.amazonaws.com/3d_views_fine_test_all/{imageID}_0_obman_test_rgb_{imageID}.jpg.png`
+
+- OCC-MLLM Dataset (DexYCB-based)
+  - Full instructions and index files: [dex-ycb-dataset/README.md](./dex-ycb-dataset/README.md)
+  - Download: `https://pan.baidu.com/s/1olDfMPFIDlmsR9NKDWZymQ?pwd=k56i` (code: `k56i`)
+  - Merge and extract:
+```bash
+cat dex_ycb_occ_mllm_dataset.tar.gz.part0* > dex_ycb_occ_mllm_dataset.tar.gz
+tar -zxvf dex_ycb_occ_mllm_dataset.tar.gz
+```
+  - After extraction: `train_origin`, `train_rendered`, `test_origin`, `test_rendered`
+
 ### Basic Usage
 
 ```bash
