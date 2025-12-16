@@ -114,11 +114,11 @@ Our pretrained models are available on Baidu Netdisk:
 ```bash
 python recontruct_3Dimage.py
 ```
-    - Reconstructed 3D views (template):
+- OR visit our uploaded Reconstructed 3D views (template):
 ```
 https://obmandataset.s3.us-east-2.amazonaws.com/3d_views_fine_test_all/{imageID}_0_obman_test_rgb_{imageID}.jpg.png
 ```
-    - Original images example (ObMan, test set):
+- Original images example (ObMan, test set):
 ```
 https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb/{imageID}.jpg
 ```
