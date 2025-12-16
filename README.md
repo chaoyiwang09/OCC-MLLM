@@ -118,13 +118,13 @@ python recontruct_3Dimage.py
 ```
 https://obmandataset.s3.us-east-2.amazonaws.com/3d_views_fine_test_all/{imageID}_0_obman_test_rgb_{imageID}.jpg.png
 ```
-    - Original images example (ObMan, S3):
+    - Original images example (ObMan, test set):
 ```
-https://obmandataset.s3.us-east-2.amazonaws.com/eccv_train_gpt_ft/{imageID}.jpg
+https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb//{imageID}.jpg
 ```
 Example:
 ```
-https://obmandataset.s3.us-east-2.amazonaws.com/eccv_train_gpt_ft/00000061.jpg
+https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb//00000000.jpg
 ```
     - OR Original images (ObMan): `https://pan.baidu.com/s/1oc1bVhl9btEserZxb7yA1Q?pwd=4atx` (code: `4atx`, archive: `obman.zip`)
 
