@@ -1,0 +1,10 @@
+{
+  "sharegpt4v_mix665k_cap23k_coco-ap9k_lcs3k_sam9k_div2k": {
+    "root": "/root/autodl-tmp/dex-ycb/moho_inference_results/train_rgb/",
+    "annotation": "/root/autodl-tmp/dex-ycb/dexycb_train_dual_images_with_clarity_balanced.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4360
+  }
+}
+
