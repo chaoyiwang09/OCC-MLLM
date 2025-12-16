@@ -114,8 +114,18 @@ Our pretrained models are available on Baidu Netdisk:
 ```bash
 python recontruct_3Dimage.py
 ```
-    - Reconstructed 3D views available at: `https://obmandataset.s3.us-east-2.amazonaws.com/3d_views_fine_test_all/{imageID}_0_obman_test_rgb_{imageID}.jpg.png`
-    - Original images (ObMan): `https://pan.baidu.com/s/1oc1bVhl9btEserZxb7yA1Q?pwd=4atx` (code: `4atx`, archive: `obman.zip`)
+    - Reconstructed 3D views (template):
+```
+https://obmandataset.s3.us-east-2.amazonaws.com/3d_views_fine_test_all/{imageID}_0_obman_test_rgb_{imageID}.jpg.png
+```
+    - Original images example (ObMan, S3):
+```
+https://obmandataset.s3.us-east-2.amazonaws.com/eccv_train_gpt_ft/{imageID}.jpg
+```
+```
+https://obmandataset.s3.us-east-2.amazonaws.com/eccv_train_gpt_ft/00000061.jpg
+```
+    - OR Original images (ObMan): `https://pan.baidu.com/s/1oc1bVhl9btEserZxb7yA1Q?pwd=4atx` (code: `4atx`, archive: `obman.zip`)
 
 - OCC-MLLM Dataset (DexYCB-based)
   - Full instructions and index files: [dex-ycb-dataset/README.md](./dex-ycb-dataset/README.md)
