@@ -106,7 +106,7 @@ Our pretrained models are available on Baidu Netdisk:
 
 ## 📦 Dataset Access
 
-- OCC-MLLM Dataset (ObMan-based)
+ - **OCC-MLLM Dataset (ObMan-based)**
   - See details: [occ-mllm-cot/README.md](./occ-mllm-cot/README.md)
   - Key steps:
     - Prepare `obman_view_test_all.txt`
@@ -129,7 +129,7 @@ https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb/00000000.jpg
 - Original images (ObMan): [Baidu Netdisk (code: 4atx)](https://pan.baidu.com/s/1oc1bVhl9btEserZxb7yA1Q?pwd=4atx) (archive: `obman.zip`)
 - Original images example (ObMan, test set): [test sample](https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb/00000000.jpg)
 
-- OCC-MLLM Dataset (DexYCB-based)
+ - **OCC-MLLM Dataset (DexYCB-based)**
   - Full instructions and index files: [dex-ycb-dataset/README.md](./dex-ycb-dataset/README.md)
   - Download: [Baidu Netdisk (code: k56i)](https://pan.baidu.com/s/1olDfMPFIDlmsR9NKDWZymQ?pwd=k56i)
   - Merge and extract:
