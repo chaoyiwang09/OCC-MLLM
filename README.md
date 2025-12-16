@@ -120,14 +120,14 @@ https://obmandataset.s3.us-east-2.amazonaws.com/3d_views_fine_test_all/{imageID}
 ```
     - Original images example (ObMan, test set):
 ```
-https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb//{imageID}.jpg
+https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb/{imageID}.jpg
 ```
 Example:
 ```
-https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb//00000000.jpg
+https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb/00000000.jpg
 ```
 - Original images (ObMan): [Baidu Netdisk (code: 4atx)](https://pan.baidu.com/s/1oc1bVhl9btEserZxb7yA1Q?pwd=4atx) (archive: `obman.zip`)
-- Original images example (ObMan, test set): [test sample](https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb//00000000.jpg)
+- Original images example (ObMan, test set): [test sample](https://obmandataset.s3.us-east-2.amazonaws.com/eccv_test_rgb/00000000.jpg)
 
 - OCC-MLLM Dataset (DexYCB-based)
   - Full instructions and index files: [dex-ycb-dataset/README.md](./dex-ycb-dataset/README.md)
